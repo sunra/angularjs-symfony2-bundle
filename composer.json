@@ -1,0 +1,21 @@
+{
+    "name": "sunra/angularjs-symfony2-bundle",
+    "description": "AngularJS and set of usefull thirdparty libs",
+    "type": "symfony-bundle",    
+    "keywords": ["AngularJS", "symfony", "bindonce"],
+    "homepage": "https://github.com/sunra/angularjs-symfony2-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sunra",
+            "email": "sunra@yandex.ru"            
+        }        
+    ],
+    "require": {        
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": "2.*"        
+    },
+    "autoload": {
+        "psr-0": { "Sunra\\AngularBundle": "" }
+    }
+}
