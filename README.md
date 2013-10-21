@@ -44,13 +44,13 @@ Usage
 -----
 ```
 
-<script src="{{ asset('bundles/sunrajqueryset/js/jquery/jquery-1.9.1.min.js') }}"></script>
-<script src="{{ asset('bundles/sunrajqueryset/js/jquery/jquery-migrate-1.1.0.min.js') }}"></script>
+ <script src="{{ asset('bundles/sunraangular/js/angular/1.2.0-rc.3/angular.min.js') }}"></script>
+ <script src="{{ asset('bundles/sunraangular/js/thirdparty/bindonce/bindonce.js') }}"></script>
 
-<script src="{{ asset('bundles/sunrajqueryset/js/jquery-plugin/jQueryTimers/jquery.timers.js') }}"></script>
 
-<link href="{{ asset('bundles/sunrajqueryset/js/jquery-plugin/jQuery-Tags-Input/jquery.tagsinput.css') }}" rel="stylesheet">
-<script src="{{ asset('bundles/sunrajqueryset/js/jquery-plugin/jQuery-Tags-Input/jquery.tagsinput.min.js') }}"></script>
 
-<script src="{{ asset('bundles/sunrajqueryset/js/jquery-plugin/jqBootstrapValidation/jqBootstrapValidation-1.3.6.min.js') }}"></script>
+
+
+
+
 ```
