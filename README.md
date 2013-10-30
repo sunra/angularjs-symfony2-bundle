@@ -13,8 +13,8 @@ AngularJS
 
 Thirdparty
 -------
-- bindonce  v0.2.1  https://github.com/Pasvaz/bindonce
-
+- bindonce              v0.2.1  https://github.com/Pasvaz/bindonce
+- angular-local-storage master  https://github.com/grevory/angular-local-storage
 
 
 Installation
