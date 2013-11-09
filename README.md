@@ -9,7 +9,7 @@ https://github.com/sunra/angularjs-symfony2-bundle
 Contents
 --------
 AngularJS 
-- 1.2.0-rc.3
+- 1.2.0
 
 Thirdparty
 -------
@@ -43,8 +43,7 @@ app/console assets:install
 Usage
 -----
 ```
-
- <script src="{{ asset('bundles/sunraangular/js/angular/1.2.0-rc.3/angular.min.js') }}"></script>
+ <script src="{{ asset('bundles/sunraangular/js/angular/angular-1.2.0/angular.min.js') }}"></script> 
  <script src="{{ asset('bundles/sunraangular/js/thirdparty/bindonce/bindonce.js') }}"></script>
  <script src="{{ asset('bundles/sunraangular/js/thirdparty/angular-local-storage/angular-local-storage.js') }}"></script>
 
