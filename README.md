@@ -9,7 +9,7 @@ https://github.com/sunra/angularjs-symfony2-bundle
 Contents
 --------
 AngularJS 
-- 1.2.0
+- 1.2.4
 
 Thirdparty
 -------
