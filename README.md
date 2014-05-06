@@ -9,13 +9,13 @@ https://github.com/sunra/angularjs-symfony2-bundle
 Contents
 --------
 AngularJS 
-- 1.2.4
+- 1.2.16
 
 Thirdparty
 -------
-- bindonce              v0.2.1  https://github.com/Pasvaz/bindonce
-- angular-local-storage master  https://github.com/grevory/angular-local-storage
-
+- bindonce                              v0.2.1  https://github.com/Pasvaz/bindonce
+- angular-local-storage                 master  https://github.com/grevory/angular-local-storage
+- begriffs/angular-paginate-anything    master  https://github.com/begriffs/angular-paginate-anything
 
 Installation
 ------------
