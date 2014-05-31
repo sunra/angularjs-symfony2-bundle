@@ -16,6 +16,8 @@ Thirdparty
 - bindonce                              v0.2.1  https://github.com/Pasvaz/bindonce
 - angular-local-storage                 master  https://github.com/grevory/angular-local-storage
 - begriffs/angular-paginate-anything    master  https://github.com/begriffs/angular-paginate-anything
+- jirikavi/AngularJS-Toaster            master  https://github.com/jirikavi/AngularJS-Toaster
+
 
 Installation
 ------------
