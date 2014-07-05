@@ -31,7 +31,10 @@ Then in your view
 ```html
 <!-- elements such as an ng-table reading from someVariable -->
 
-<pagination collection="someVariable" url="'http://api.server.com/stuff'"></pagination>
+<begriffs.pagination
+  collection="someVariable"
+  url="'http://api.server.com/stuff'">
+</begriffs.pagination>
 ```
 
 The `pagination` directive uses an external template stored in
@@ -85,6 +88,11 @@ your page and set the `template-url` attribute (see below).
       <td>Read/write.</td>
     </tr>
     <tr>
+      <td>auto-presets</td>
+      <td>(default=`true`) Overrides per-page presets and client-limit to quantized values 1,2,5,10,25,50...</td>
+      <td>Read/write.</td>
+    </tr>
+    <tr>
       <td>client-limit</td>
       <td>Biggest page size the directive will show. Server response may be smaller.</td>
       <td>Read/write.</td>
@@ -109,6 +117,16 @@ your page and set the `template-url` attribute (see below).
       <td>Maximum results the server will send (Infinity if not yet detected)</td>
       <td>Read-only.</td>
     </tr>
+    <tr>
+      <td>reload-page</td>
+      <td>If set to true, the current page is reloaded.</td>
+      <td>Write-only.</td>
+    </tr>
+    <tr>
+      <td>passive</td>
+      <td>If using more than one pagination control set this to 'true' on all but the first.</td>
+      <td>Write-only.</td>
+    </tr>
   </tbody>
 </table>
 
@@ -128,8 +146,34 @@ limit and offset of the requested data. Your need to set response
 headers to indicate the range returned and the total number of items
 in the collection.
 
-You can write the logic yourself, or try a **pre-made library like
-[begriffs/clean_pagination](https://github.com/begriffs/clean_pagination).**
+You can write the logic yourself, or use one of the following server
+side libraries.
+
+<table>
+  <thead>
+    <tr>
+      <th>Framework</th>
+      <th>Solution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ruby on Rails</td>
+      <td><a href="https://github.com/begriffs/clean_pagination">begriffs/clean_pagination</a> gem</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Node.js</td>
+      <td><a href="https://github.com/polo2ro/node-paginate-anything">node-paginate-anything</a> module</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/begriffs/angular-paginate-anything/wiki/How-to-configure-NodeJS">Express JS from scratch howto</a></td>
+    </tr>
+    <tr>
+      <td>ServiceStack for .NET</td>
+      <td><a href="https://github.com/begriffs/angular-paginate-anything/wiki/How-to-configure-.NET">.NET howto</a></td>
+    </tr>
+  </tbody>
+</table>
 
 For a reference of a properly configured server, visit
 [pagination.begriffs.com](http://pagination.begriffs.com/).
@@ -187,6 +231,7 @@ see my [clean_pagination](https://github.com/begriffs/clean_pagination) gem.
 * [Hypertext Transfer Protocol (HTTP/1.1): Range Requests](http://greenbytes.de/tech/webdav/draft-ietf-httpbis-p5-range-latest.html)
 * [RFC2616 Section 3.12, custom range units](http://www.ietf.org/rfc/rfc2616.txt)
 * [Beyond HTTP Header Links](http://blog.begriffs.com/2014/03/beyond-http-header-links.html)
+* [Heroku recommends Range headers for pagination](https://github.com/interagent/http-api-design#paginate-with-ranges)
 
 ### Thanks
 
