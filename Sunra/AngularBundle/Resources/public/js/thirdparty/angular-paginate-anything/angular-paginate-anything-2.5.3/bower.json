@@ -1,0 +1,20 @@
+{
+  "name": "angular-paginate-anything",
+  "version": "2.5.3",
+  "main": "src/paginate-anything.js",
+  "dependencies": {
+    "angular": "latest"
+  },
+  "devDependencies": {
+    "angular-mocks": "latest",
+    "jasmine-as-promised": "latest"
+  },
+  "ignore": [
+    "**/.*",
+    "**/*.json",
+    "node_modules",
+    "bower_components",
+    "test"
+  ]
+}
+

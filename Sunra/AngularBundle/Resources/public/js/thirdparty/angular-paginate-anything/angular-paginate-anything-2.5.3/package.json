@@ -1,0 +1,36 @@
+{
+  "name": "angular-paginate-anything",
+  "version": "2.5.3",
+  "description": "Add server-side pagination to any list",
+  "main": "src/paginate-anything.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/begriffs/angular-paginate-anything.git"
+  },
+  "devDependencies": {
+    "bower"                        : "latest",
+    "grunt"                        : "latest",
+    "grunt-bump"                   : "latest",
+    "grunt-cli"                    : "latest",
+    "grunt-contrib-jshint"         : "latest",
+    "grunt-contrib-uglify"         : "latest",
+    "grunt-contrib-watch"          : "latest",
+    "grunt-karma"                  : "latest",
+    "jshint"                       : "latest",
+    "karma"                        : "latest",
+    "karma-jasmine"                : "~0.2.0",
+    "karma-ng-html2js-preprocessor": "latest",
+    "karma-phantomjs-launcher"     : "latest"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Joe Nelson",
+    "email": "",
+    "url": "https://github.com/begriffs"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}
