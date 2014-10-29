@@ -1,0 +1,12 @@
+{# A Curly Macro for a Ng Stament for AngularJs #}
+{# 2 ways for use the curly brackers 
+  * 1: on header top page template
+      {%import "SunraAngularBundle::ngcurly.html.twig" as ng %}
+    use: {{ ng.curly('variale') }}
+  * 2:
+ {% from 'SunraAngularBundle::ngcurly.html.twig' import curly as ng %}
+    use: {{ ng('variable') }}
+#}
+{% macro curly(contents) %}
+   {{ '{{' ~ contents ~ '}}' }}
+{% endmacro %}
