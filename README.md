@@ -21,7 +21,7 @@ Thirdparty
 | begriffs/angular-paginate-anything | master   | https://github.com/begriffs/angular-paginate-anything |  
 | jirikavi/AngularJS-Toaster         | master   | https://github.com/jirikavi/AngularJS-Toaster         |
 | angular-ui/bootstrap               | gh-pages | https://github.com/angular-ui/bootstrap/tree/gh-pages |
-| Animate.css - http://daneden.me/animate | | |
+| Animate.css | | https://github.com/daneden/animate.css |
 
 Installation
 ------------
