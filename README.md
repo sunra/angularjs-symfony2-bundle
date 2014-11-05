@@ -48,7 +48,7 @@ app/console assets:install
 
 Usage
 -----
-```
+```html
  <script src="{{ asset('bundles/sunraangular/js/angular/angular-1.2.0/angular.min.js') }}"></script> 
  <script src="{{ asset('bundles/sunraangular/js/thirdparty/bindonce/bindonce.js') }}"></script>
  <script src="{{ asset('bundles/sunraangular/js/thirdparty/angular-local-storage/angular-local-storage.js') }}"></script>
