@@ -62,3 +62,24 @@ Usage
 
 
 ```
+
+
+Use Stament on twig page
+------------------------
+2 ways for use the curly brackers 
+
+1: on header top page template
+      
+      {%import "SunraAngularBundle::ngcurly.html.twig" as ng %}
+
+use on twig page: 
+
+      {{ ng.curly('ngdatavar') }}
+
+2: on header top page template
+
+      {% from 'SunraAngularBundle::ngcurly.html.twig' import curly as ng %}
+
+use on twig page 
+      
+      {{ ng('ngdatavar') }} 
