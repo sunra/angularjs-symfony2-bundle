@@ -9,10 +9,8 @@ https://github.com/sunra/angularjs-symfony2-bundle
 Contents
 --------
 AngularJS 
-- 1.3.3 
-- 1.3.2
-- 1.2.27
-- 1.2.26
+- 1.3.15 
+- 1.4.0
 
 Thirdparty
 -------
@@ -30,7 +28,7 @@ Installation
 
 1. Add to composer.json into "require" section
 ```
-"sunra/angularjs-symfony2-bundle": "dev-master"
+"TomaszSkorupka/angularjs-symfony2-bundle": "dev-master"
 ```
 and run 
 ```
@@ -47,18 +45,13 @@ new Sunra\AngularBundle\SunraAngularBundle()
 app/console assets:install
 ```
 
-
 Usage
 -----
 ```html
- <script src="{{ asset('bundles/sunraangular/js/angular/angular-1.2.0/angular.min.js') }}"></script> 
+<!-- ... -->
+ <script src="{{ asset('bundles/sunraangular/js/angular/angular-1.4.0/angular.min.js') }}"></script> 
  <script src="{{ asset('bundles/sunraangular/js/thirdparty/bindonce/bindonce.js') }}"></script>
  <script src="{{ asset('bundles/sunraangular/js/thirdparty/angular-local-storage/angular-local-storage.js') }}"></script>
  <script src="{{ asset('bundles/sunraangular/js/thirdparty/angular-ui/bootstrap/bootstrap-gh-pages/ui-bootstrap-0.11.0.min.js') }}"></script>
-
- 
-
-
-
-
+<!-- ... -->
 ```
