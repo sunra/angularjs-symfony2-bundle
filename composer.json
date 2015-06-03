@@ -1,5 +1,5 @@
 {
-    "name": "TomaszSkorupka/angularjs-symfony2-bundle",
+    "name": "tomaszskorupka/angularjs-symfony2-bundle",
     "description": "AngularJS and set of usefull thirdparty libs - composer packaged and in symfony2 bundle",
     "type": "symfony-bundle",    
     "keywords": ["AngularJS", "symfony", "bindonce"],
@@ -7,7 +7,7 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Sunra",
+            "name": "Tomasz",
             "email": "tomaszskorupka94@gmail.com"            
         }        
     ],
