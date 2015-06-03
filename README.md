@@ -3,7 +3,7 @@ AngularJS and set of usefull thirdparty libs
 
 Symfony2 bundled & composer packaged
 
-https://github.com/sunra/angularjs-symfony2-bundle
+https://github.com/TomaszSkorupka/angularjs-symfony2-bundle
 
 
 Contents
