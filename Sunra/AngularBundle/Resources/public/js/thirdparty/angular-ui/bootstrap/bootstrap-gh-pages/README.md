@@ -1,24 +1,102 @@
-The `gh-pages` branch contains generated demo pages for http://angular-ui.github.com/bootstrap as well as build results.
+### UI Bootstrap - [AngularJS](http://angularjs.org/) directives specific to [Bootstrap](http://getbootstrap.com)
 
-#Installation
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/angular-ui/bootstrap?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://secure.travis-ci.org/angular-ui/bootstrap.svg)](http://travis-ci.org/angular-ui/bootstrap)
+[![devDependency Status](https://david-dm.org/angular-ui/bootstrap/dev-status.svg?branch=master)](https://david-dm.org/angular-ui/bootstrap#info=devDependencies)
 
-All the directives in this repository depend only on AngularJS and bootstrap's CSS. There is no need to include any third-party JavaScript files.
+### Quick links
+- [Demo](#demo)
+- [Installation](#installation)
+    - [Bower](#install-with-bower)
+    - [NuGet](#install-with-nuget)
+    - [Custom](#custom-build)
+    - [Manual](#manual-download)
+- [Support](#support)
+    - [FAQ](#faq)
+    - [Supported browsers](#supported-browsers)
+    - [Need help?](#need-help)
+    - [Found a bug?](#found-a-bug)
+- [Contributing to the project](#contributing-to-the-project)
+- [Development, meeting minutes, roadmap and more.](#development-meeting-minutes-roadmap-and-more)
 
-The bootstrap CSS can be referenced from a CDN: http://www.bootstrapcdn.com/
 
-Then it is enough to include one of the build files described below.
+# Demo
 
-##Build files
+Do you want to see directives in action? Visit http://angular-ui.github.io/bootstrap/!
 
-In this repository one can find build files with the following names:
+# Installation
 
-* ui-bootstrap-[version].js
-* ui-bootstrap-tpls-[version].js
-* ui-bootstrap-[version].min.js
-* ui-bootstrap-tpls-[version].min.js
+Installation is easy as UI Bootstrap has minimal dependencies - only the AngularJS and Twitter Bootstrap's CSS are required.
 
-Files with the `min` suffix are minified versions to be used in production.
+#### Install with Bower
+```sh
+$ bower install angular-bootstrap
+```
 
-Then we've got files with the `-tpls`. To explain the difference let's start by explaining that we want our directives to be highly customizable. To achieve this we are trying hard not to hard-code markup nor CSS inside JavaScript code. Instead most of the directives are coming with a dedicated template(s) so people can change them. We are providing default templates based on Twitter's markup and CSS but you should be able to prepare your own partials to change the look&feel of widgets from this repo.
+Note: do not install 'angular-ui-bootstrap'.  A separate repository - [bootstrap-bower](https://github.com/angular-ui/bootstrap-bower) - hosts the compiled javascript file and bower.json.
 
-Now it should be clear that files with the `-tpls` in their name have bootstrap-specific templates bundled with directives. For people who want to take all the directives and don't need to customize anything the solution is to grab a file named `ui-bootstrap-tpls-[version].min.js`. If, on the other hand default templates are not what you need you could take `ui-bootstrap-[version].min.js` and provide your own templates, taking the default ones (https://github.com/angular-ui/bootstrap/tree/master/template) as a starting point.
+#### Install with NuGet
+To install AngularJS UI Bootstrap, run the following command in the Package Manager Console
+
+```sh
+PM> Install-Package Angular.UI.Bootstrap
+```
+
+#### Custom build
+
+Head over to http://angular-ui.github.io/bootstrap/ and hit the *Custom build* button to create your own custom UI Bootstrap build, just the way you like it.
+
+#### Manual download
+
+After downloading dependencies (or better yet, referencing them from your favorite CDN) you need to download build version of this project. All the files and their purposes are described here:
+https://github.com/angular-ui/bootstrap/tree/gh-pages#build-files
+Don't worry, if you are not sure which file to take, opt for `ui-bootstrap-tpls-[version].min.js`.
+
+### Adding dependency to your project
+
+When you are done downloading all the dependencies and project files the only remaining part is to add dependencies on the `ui.bootstrap` AngularJS module:
+
+```js
+angular.module('myModule', ['ui.bootstrap']);
+```
+
+# Support
+
+## FAQ
+
+https://github.com/angular-ui/bootstrap/wiki/FAQ
+
+## Supported browsers
+
+Directives from this repository are automatically tested with the following browsers:
+* Chrome (stable and canary channel)
+* Firefox
+* IE 9 and 10
+* Opera
+* Safari
+
+Modern mobile browsers should work without problems.
+
+
+## Need help?
+Need help using UI Bootstrap?
+
+* Live help in the IRC (`#angularjs` channel at the `freenode` network). Use this [webchat](https://webchat.freenode.net/) or your own IRC client.
+* Ask a question in [StackOverflow](http://stackoverflow.com/) under the [angular-ui-bootstrap](http://stackoverflow.com/questions/tagged/angular-ui-bootstrap) tag.
+
+**Please do not create new issues in this repository to ask questions about using UI Bootstrap**
+
+## Found a bug?
+Please take a look at [CONTRIBUTING.md](CONTRIBUTING.md#you-think-youve-found-a-bug) and submit your issue [here](https://github.com/angular-ui/bootstrap/issues/new).
+
+
+----
+
+
+# Contributing to the project
+
+We are always looking for the quality contributions! Please check the [CONTRIBUTING.md](CONTRIBUTING.md) for the contribution guidelines.
+
+# Development, meeting minutes, roadmap and more.
+
+Head over to the [Wiki](https://github.com/angular-ui/bootstrap/wiki) for notes on development for UI Bootstrap, meeting minutes from the UI Bootstrap team, roadmap plans, project philosophy and more.
