@@ -1,14 +1,14 @@
 {
-    "name": "sunra/angularjs-symfony2-bundle",
+    "name": "tomaszskorupka/angularjs-symfony2-bundle",
     "description": "AngularJS and set of usefull thirdparty libs - composer packaged and in symfony2 bundle",
     "type": "symfony-bundle",    
     "keywords": ["AngularJS", "symfony", "bindonce"],
-    "homepage": "https://github.com/sunra/angularjs-symfony2-bundle",
+    "homepage": "https://github.com/TomaszSkorupka/angularjs-symfony2-bundle",
     "license": "MIT",
     "authors": [
         {
-            "name": "Sunra",
-            "email": "sunra@yandex.ru"            
+            "name": "Tomasz",
+            "email": "tomaszskorupka94@gmail.com"            
         }        
     ],
     "require": {        

@@ -22,28 +22,49 @@ module.exports = function(config) {
     // - Safari (only Mac)
     // - PhantomJS
     // - IE (only Windows)
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
 
     // list of files / patterns to load in the browser
     files: [
       bower + 'angular/angular.js',
       bower + 'angular-mocks/angular-mocks.js',
-      'angular-local-storage.js',
+      'src/*.js',
+      'test/mock/*.js',
       'test/spec/**/*.js'
     ],
 
     // testing framework to use (jasmine/mocha/qunit/...)
     frameworks: ['jasmine'],
 
+    // Which plugins to enable
+    plugins: [
+      'karma-phantomjs-launcher',
+      'karma-jasmine',
+      'karma-coverage'
+    ],
+
     // level of logging
     // possible values: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
     logLevel: config.LOG_INFO,
 
     // web server port
-    port: 8080,
+    port: 8999,
 
     // Continuous Integration mode
     // if true, it capture browsers, run tests and exit
-    singleRun: false
+    singleRun: true,
+
+    reporters: ['progress', 'coverage'],
+
+    // preprocessors
+    preprocessors: {
+      'src/*.js': ['coverage']
+    },
+
+    // configure the reporter
+    coverageReporter: {
+      type : 'lcov',
+      dir : 'coverage/'
+    }
   });
 };
