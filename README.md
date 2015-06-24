@@ -1,3 +1,6 @@
+* Support discontinued!
+* It is better to use it - https://github.com/francoispluchino/composer-asset-plugin
+
 AngularJS and set of usefull thirdparty libs
 ===============================================
 
