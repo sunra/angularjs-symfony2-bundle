@@ -1,5 +1,6 @@
-* Support discontinued!
-* It is better to use it - https://github.com/francoispluchino/composer-asset-plugin
+This package is designed for those systems that can not use Bower, etc. 
+And as an alternative to - https://github.com/francoispluchino/composer-asset-plugin
+
 
 AngularJS and set of usefull thirdparty libs
 ===============================================
@@ -12,10 +13,8 @@ https://github.com/sunra/angularjs-symfony2-bundle
 Contents
 --------
 AngularJS 
-- 1.3.3 
-- 1.3.2
-- 1.2.27
-- 1.2.26
+- 1.3.16
+- 1.4.1
 
 Thirdparty
 -------
@@ -54,7 +53,7 @@ app/console assets:install
 Usage
 -----
 ```html
- <script src="{{ asset('bundles/sunraangular/js/angular/angular-1.2.0/angular.min.js') }}"></script> 
+ <script src="{{ asset('bundles/sunraangular/js/angular/angular-1.4.1/angular.min.js') }}"></script> 
  <script src="{{ asset('bundles/sunraangular/js/thirdparty/bindonce/bindonce.js') }}"></script>
  <script src="{{ asset('bundles/sunraangular/js/thirdparty/angular-local-storage/angular-local-storage.js') }}"></script>
  <script src="{{ asset('bundles/sunraangular/js/thirdparty/angular-ui/bootstrap/bootstrap-gh-pages/ui-bootstrap-0.11.0.min.js') }}"></script>
